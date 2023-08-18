@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+<h1>Javascript Introduction</h1>
+<script>
+	//var a = 20;
+	//var b = 30;
+	//var c = 40;
+	//alert(a);
+	//console.log (b);
+	//document.write("welcome to Javascript<br><br>");
+	//document.write("The value of a is",c);
+	//var name = 'Santhu';
+	//document.write(name.length+"<br>");
+	//name = ' Javascript';
+	//name += ' Javascript';
+	//document.write(name.length);
+	//document.write(name);
+//type of variable
+	//var a = 'java';
+	//document.write(typeof(a));
+//undefined variable
+	//var a;
+	//a +='java'
+	//document.write(a);
+//array
+	//var arr = ['Javascript','kalyani','lucky','santhu'];
+	//document.write(arr[1]+" ");
+	//document.write(arr[2]);
+//object
+	var obj = [{
+		   'name':'santhu',
+		   'rollno':23411,
+		   'college':'ACOE',
+		   'branch':'CSE'
+	},
+	{
+		   'name':'bhavani',
+		   'rollno':21283,
+		   'college':'ACET',
+		   'branch':'ECE'
+	}]
+	//console.log(obj);
+	//console.log(obj[0].name);
+	//console.log(obj[1].name);
+	 for (var i = 0;i < obj.length; i++) {
+	  	// console.log(obj[i])
+      	// document.write(obj[i].name,obj[i].rollno,obj[i].college,obj[i].branch)
+     	// document.write("<br>");
+     for(key in obj[i]){
+     	document.write(obj[i][key])
+     	document.write("<br>")
+     }
+    }
+</script>
+</body>
+<!--<script type="text/javascript" src="intro.js"></script>-->
+</html>
