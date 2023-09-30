@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> CANDLE TASK</title>
+</head>
+<body>
+<center>
+<div style="height:500px;width:450px;border:2px solid black"><img id="candle" src="sliders/candle1.jpg" height="500px" width="450px"></div></center>
+<script type="text/javascript">
+	var image=document.getElementById('candle');
+    image.addEventListener('mouseover',function(){
+    	image.src="sliders/candle1.jpg"
+    })
+    image.addEventListener('mouseout',function(){
+    	image.src="sliders/candle2.jpg"
+    })
+</script>
+</body>
+</html>

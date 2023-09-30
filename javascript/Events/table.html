@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Display Array with Map in Table</title>
+</head>
+<body>
+    <center>
+    <table id="arrayTable" border="3px" cellspacing="1" cellpadding="1" height="100px" width="150px">
+        <tbody>
+            <tr>
+                <th>ROLLNO</th>
+                <th>Name</th>
+            </tr>
+        </tbody>
+    </table>
+</center>
+    <script>
+        let dataArray = [
+            { id: 1, name: 'ravi'},
+            { id: 2, name: 'raju'},
+            { id: 3, name: 'divya'},
+            { id: 4, name: 'vinay'},
+            { id: 5, name: 'ajay'}
+        ];
+        let tableBody = document.querySelector('#arrayTable tbody');
+        let tableRows = dataArray.map(item => {
+            let row = document.createElement('tr');
+            let idCell = document.createElement('td');
+            idCell.textContent = item.id;
+            let nameCell = document.createElement('td');
+            nameCell.textContent = item.name;
+            row.appendChild(idCell);
+            row.appendChild(nameCell);
+            return row;
+        });
+        tableRows.forEach(row => {
+            tableBody.appendChild(row);
+        });
+    </script>
+</body>
+</html>

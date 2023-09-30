@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Keyboard events</title>
+</head>
+<body>
+<h3>Keyboard events</h3>
+<!-- <ul style="list-style-type:none;">
+	<li>Key down</li>
+	<li>key up</li>
+	<li>key press</li>
+</ul>
+<hr> -->
+<form>
+	<!-- <label>Key down :</label>
+	<input type="text" name="" value="" onKeydown="example(this.value)">
+	<br>-->
+	<span id="sp"></span>
+	<label>Enter name:</label>
+    <input type="text" name="" value="" onKeyup="example(this.value)">
+    <br>
+    <!-- <br>
+    <label>Key press :</label>
+    <input type="text" name="" value="" onKeypress="example(this.value)"> -->
+    </form>
+    <script type="text/javascript">
+    	function example(text){
+    		document.getElementById('sp').innerText=text;
+    		if(text=''){
+    			document.getElementById('sp').innerText='please enter your name';
+    			document.style.body.color:'red';
+    		}
+    		else{
+    			document.getElementById('sp').innerText=text;
+    		}
+    	}
+    </script>
+</body>
+</html>

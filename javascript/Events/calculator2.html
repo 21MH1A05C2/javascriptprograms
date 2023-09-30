@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Calculator 2</title>
+</head>
+<body>
+<h2>Calculator</h2>
+<table border="2" height="300px" width="300px" cellpadding="5">
+<tr>
+	<td colspan="4" style="height:50px;width:300px;text-align:right;" id="output_id"></td>
+</tr>
+<tr>
+	<td>9</td>
+	<td>8</td>
+	<td>7</td>
+	<td>/</td>
+</tr>
+<tr>
+	<td>6</td>
+	<td>5</td>
+	<td>4</td>
+	<td>*</td>
+</tr>
+<tr>
+	<td>3</td>
+	<td>2</td>
+	<td>1</td>
+	<td>-</td>
+</tr>
+<tr>
+	<td>0</td>
+	<td>C</td>
+	<td>=</td>
+	<td>+</td>
+</tr>
+</table>
+</center>
+<script type="text/javascript">
+	var tds=document.querySelectorAll("#table_id td");
+	for(var i=0;i<tds.length;i++){
+		var val= this.innerText
+		if(val=='='){
+			getres=document.getElementById('output_id').innerText;
+			document.getElementById('output_id').innerText=eval(res);
+		}
+		else{
+			if(val='C'){
+				document.getElementById('output_id').innerText='';
+			}
+			else{
+				document.getElementById('output_id').innerText+=val;
+			}
+		}
+	}
+</script>
+</body>
+</html>

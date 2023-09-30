@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <div id="array" style="height:150px;width:200px;background-color:pink;text-align:center;"></div>
+    <script>
+        let data = ['Divya','ajay','vinay','venkatesh'];
+        let array = document.getElementById('array');
+        let divElements = data.map(item => {
+            let div = document.createElement('div');
+            div.textContent = item;
+            return div;
+        });
+        divElements.forEach(div => {
+            array.appendChild(div);
+        });
+    </script>
+</body>
+</html>

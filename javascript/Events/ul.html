@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Display Array with Map in List</title>
+</head>
+<body>
+    <ul id="arrayList"></ul>
+    <script>
+        const data = ['Divya','ajay','vinay','venkatesh'];
+        const listElement = document.getElementById('arrayList');
+        const listItems = data.map(item => {
+            const listItem = document.createElement('li');
+            listItem.textContent = item;
+            return listItem;
+        });
+        listItems.forEach(listItem => {
+            listElement.appendChild(listItem);
+        });
+    </script>
+</body>
+</html>

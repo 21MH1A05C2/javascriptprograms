@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+<div style="height:600px;width:1100px;">
+	<div style="height:600px; width:600px;float:left;">
+		<div style="height:600px; width:200px;float:left;"><img src="sliders/1.jpg" onclick="getimage()"></div>
+		<div style="height:600px; width:200px;float:left;"><img src="sliders/2.jpg" onclick="getiimage()"></div>
+		<div style="height:600px; width:200px;float:left;"><img src="sliders/3.jpg" onclick="getiiimage()"></div>
+	</div>
+	<div style="height:600px; width:500px;float:left;" id="hello"></div>
+</div>
+<script type="text/javascript">
+	function getimage()
+	{
+     let l= document.getElementById('hello').innerHTML="<img src='sliders/1.jpg'>";
+     l.style.width='300px';
+
+	}
+	function getiimage()
+	{
+      document.getElementById('hello').innerHTML="<img src='sliders/2.jpg'>";
+	}
+	function getiiimage()
+	{
+      document.getElementById('hello').innerHTML="<img src='sliders/3.jpg'>";
+	}
+</script>
+</body>
+</html>

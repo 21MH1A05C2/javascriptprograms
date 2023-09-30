@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<h1>String Methods</h1>
+	<table border="1" cellspacing="0">
+		<tr>
+		<td>D</td>
+		<td>R</td>
+		<td>I</td>
+		<td>V</td>
+		<td>E</td>
+		<td>&nbsp;</td>
+		<td>R</td>
+		<td>E</td>
+		<td>A</td>
+		<td>D</td>
+		<td>Y</td>
+		</tr>
+		<tr>
+		<td>0</td>
+		<td>1</td>
+		<td>2</td>
+		<td>3</td>
+		<td>4</td>
+		<td>5</td>
+		<td>6</td>
+		<td>7</td>
+		<td>8</td>
+		<td>9</td>
+		<td>10</td>
+		</tr>
+		<tr>
+		<td>-11</td>
+		<td>-10</td>
+		<td>-9</td>
+		<td>-8</td>
+		<td>-7</td>
+		<td>-6</td>
+		<td>-5</td>
+		<td>-4</td>
+		<td>-3</td>
+		<td>-2</td>
+		<td>-1</td>
+		</tr>
+	</table>
+	<script type="text/javascript">
+		function getstr(str){
+			document.write("<b>"+str+"</b></br>")
+		}
+		let s='drive ready';
+		// document.write("<b>"+s+"</b>")
+		getstr("Original string= "+s);
+		getstr("string length= "+s.length);// find the length of the string 
+		getstr("Char At= "+s.charAt(4)); // to find  character at that index
+		getstr("Index of="+ s.indexOf('v')); // to find the index of a character
+		getstr("Index of 2nd way="+ s.indexOf('ready'));
+		getstr("last Index of string="+ s.lastIndexOf('ready'));
+		let n='Morning batch'
+		getstr( "To Lower Case="+n.toLowerCase());
+		getstr( "To Upper Case="+n.toUpperCase());
+		//getstr("to concate of string= "+n.concat(s))
+		getstr("to concate of string= "+n.concat(n,s)); // to concate more than one words
+           let username = ' santhu '
+	      getstr("trim() method = "+username.trim()) // to remove left and right side spaces
+
+	      //converting string into an array=> stringname.split()
+	      console.log(s.split(" ")) 
+	      let n6='santhu';
+	console.log(n6.startsWith('s'));
+	console.log(n6.startsWith('a'));
+	console.log(n6.endsWith('u'));
+	console.log(n6.endsWith('s'));
+	 //slice method
+	//syntax: str.slice(startposition,endposition-1)
+	getstr('slice of string= '+ s.slice(1,4)); //(1 to 4-1)
+	getstr('slice of string= '+ s.slice(-3)); //it will treat as -1 as endposition
+	getstr('slice of string= '+ s.slice(-4,-2)); 
+	// substring method it allows the positive indexes
+	getstr('substring= '+ s.substring(2,5)); 
+	//include method
+	getstr('includes of string = '+s.includes('drive'));
+	//substr method
+	//substr(startpos,lengthof the characters from first position)
+	getstr("substr method = "+ s.substr(0,4));
+	//repeat method
+	getstr('repeat of string = '+s.repeat(2));
+	//replace method
+	getstr('replace of string = '+s.replace('ready','course'));
+	</script>
+</body>
+</html>
